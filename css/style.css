@@ -56,14 +56,6 @@ nav a:hover{
   left: 0;
 }
 
-/*Your code here*/
-/*Add the selector and rule to move the skip 
-link to the exact top of the page.*/
- 
-
-/*Your code here*/
-/*Add the selector and code to put a 2px black 
-border around all elements in focus.*/
 *:focus{
   border: 2px solid black;
 }
@@ -71,8 +63,8 @@ border around all elements in focus.*/
 footer{
   background-color: black;
   color: white;
-  grid-column: 1 / -1;  /*Can you explain what this does?*/
-  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  grid-column: 1 / -1;
+  grid-row: 7 / auto;
   padding-top: 30px;
   text-align: center;
 }
@@ -81,9 +73,6 @@ nav{
   background-color: #ddd;
   padding: 20px 0; 
   text-align: left;
-
-  /*Your code here*/
-  /*Span the top row*/
   grid-column: 1 / -1;
   grid-row: 1 / span 1;
 
@@ -97,9 +86,6 @@ header{
   color: white;
   height: 400px;                /* Parallax effect */
 
-  /* Your code here */
-  /* Set background-image to header.jpg in the images folder */
-  /* Span one row */
   grid-column: 1 / -1;
   grid-row: 2 / span 1;
   background-image: url('../images/header.jpg');
@@ -112,8 +98,6 @@ header p{
   text-align: center;
 }
 
-  /*Your code here  */
-  /* See documentation for mobile view */
 .container{
   display: grid;
   grid-row-gap: 15px;
@@ -122,42 +106,29 @@ header p{
 }
 
 .about, .method, .clients, .contact{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-column: 2 / span 1;
 }
 
 .about-image, .method-image, .clients-image, .contact-image{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-column: 1 / span 3;
   max-height: 700px;
   overflow: hidden;
 }
 
 .about, .about-image{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-row: 3 / span 1;
 }
 
 .method, .method-image{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-row: 4 / span 1;
 }
 
 
 .clients, .clients-image{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-row: 5 / span 1;
 }
 
-
 .contact, .contact-image{
-  /*Your code here */
-  /* See documentation for mobile view */
   grid-row: 6 / span 1;
 }
 
@@ -165,18 +136,12 @@ header p{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
-  /*Your code here:*/
-  /*Align the content in the center */
   margin: auto auto auto auto;
 }
-
-
 
 @media all and (min-width: 800px){
 
   .container{
-  /*Your code here */
-  /* See documentation for desktop view */ 
   grid-template-columns: 50px auto 500px auto 50px;
   grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
   }
@@ -189,19 +154,13 @@ header p{
   }
 
   .about, .clients, .method-image, .contact-image{
-  /*Your code here */
-  /* See documentation for desktop view */ 
     grid-column: 3 / span 2;
   }
 
   .about-image, .clients-image, .method, .contact{
-    /*Your code here */
-    /* See documentation for desktop view */ 
     grid-column: 2 / span 2;
   }
-
-
-}  /*End the media query*/
+}
 
 @media screen and (prefers-reduced-motion: reduce){
   html{
